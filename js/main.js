@@ -133,6 +133,15 @@ $(function () {
         });
         event.preventDefault();
     });
+
+    // feedback form
+
+    $(".feedback-form").submit(function(event) {
+        event.preventDefault();
+
+        alert("Thank you for your feedback.");
+        $(".feedback-form").trigger("reset");
+    })
 })
 
 
