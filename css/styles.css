@@ -1,3 +1,24 @@
+.body-overlay {
+    display: none;
+    position: fixed;
+    background: rgba(17, 17, 17, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+#myVideo {
+    position: fixed;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    opacity: 0.8;
+    z-index: -999;
+}   
+
 .nav-menu {
     display: none;
     position: fixed;
