@@ -11,6 +11,7 @@ $(function () {
             $(".navbar-brand").addClass("brand-left");
         } else {
             $(navbar).css("background-color", "transparent").css("top", 0);
+            $(".services-nav").css("background-color", "white").css("top", 0);
             $("#nav-title").hide();
             $(".navbar-brand").removeClass("brand-left");
             $(".navbar-brand").addClass("brand-auto");
@@ -43,6 +44,86 @@ $(function () {
         $(".navbar-brand").removeClass("brand-menu");
         $(".navbar-brand").addClass("brand-left");
     })
+
+      // proceed to checkout
+      $("#checkout-btn").click(function (event) {
+        var mySize = $("#pizzaSizes input:checked").val();
+        var myCrust = $(".crusts input:checked").val();
+        var myTopping = [];
+        $.each($("input[name='toppings']:checked"), function () {
+            myTopping.push($(this).val());
+        });
+
+        switch (mySize) {
+            case "0":
+                price = 0;
+                break;
+            case "Large sized pizza(1250/=)":
+                price = 1250;
+                console.log(price);
+                break;
+            case "Medium sized pizza(850/=)":
+                price = 850;
+                console.log(price);
+                break;
+            case "Small sized pizza(650/=)":
+                price = 650;
+                console.log(price);
+            default:
+                console.log("error");
+        }
+        switch (myCrust) {
+            case "0":
+                crust_price = 0;
+                break;
+            case "Crispy Crust(250/=)":
+                crust_price = 250;
+                break;
+            case "Stuffed Crust(150/=)":
+                crust_price = 150;
+                break;
+            case "Glutten Crust(200/=)":
+                crust_price = 200;
+                break;
+            default:
+        }
+        var topping_value = parseInt(myTopping.length * 50);
+
+        if ((mySize == null) || (myCrust == null)) {
+            $("#select-error").show();
+        } else {
+            $(".cart").fadeIn()
+            $(".menu-bg").removeAttr("id");
+            $(".menu-bg").addClass("menu-cart-bg");
+            $(".menu-overlay").removeAttr("id");
+            $(".menu-overlay").addClass("menu-cart-overlay");
+            $("#checkout-btn").fadeOut();
+            $("#select-error").hide();
+        }
+
+        total = parseInt(price + crust_price + topping_value);
+        var checkoutTotal = 0;
+        checkoutTotal = parseInt(checkoutTotal + total);
+
+        $("#order-size").append(mySize);
+        $("#order-crust").append(myCrust);
+        $("#order-toppings").append(myTopping).val();
+
+
+        // Proceed button
+        $("#submit-order").click(function (event) {
+            event.preventDefault();
+            $("#total-cost").append("Ksh" + checkoutTotal);
+        });
+
+        // home delivery button
+        $("#yes").click(function () {
+            prompt("Enter your location");
+            var deliveryAmount = checkoutTotal + 250;
+            $("#total-cost").append("Ksh" + deliveryAmount);
+        });
+        event.preventDefault();
+    });
 })
 
 

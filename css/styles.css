@@ -16,7 +16,7 @@ body {
 .body-overlay {
     display: none;
     position: fixed;
-    background: rgba(17, 17, 17, 0.6);
+    background: rgba(44, 43, 43, 0.6);
     width: 100%;
     height: 100%;
     z-index: 4;
@@ -514,14 +514,832 @@ i {
     width: 100%;
 }
 
-#services-video {
-    position: fixed;
-    display: block;
-    object-fit: cover;
-    object-position: center;
+#services-img {
+    position: absolute;
     width: 100%;
-    height: 500px;
     max-width: 100%;
+    height: 500px;
+    object-fit: cover;
     opacity: 0.8;
     z-index: -999;
+}
+
+.services-overlay {
+    position: absolute;
+    background: rgba(78, 75, 75, 0.6);
+    width: 100%;
+    height: 500px;
+    z-index: 2;
+}
+
+.services-nav {
+    background-color: white;
+    z-index: 3;
+}
+
+.services-card {
+    width: 380px;
+    height: auto;
+    background: lightgray;
+    color: black;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 130px;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+#card-text {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#services-title {
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+    width: 80%;
+    text-align: center;
+    z-index: 2; 
+}
+
+.menu {
+    margin-top: 200px;
+}
+
+#menu-bg {
+    position: relative;
+    width: 100%;
+    height: 1570px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.menu-cart-bg {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.menu-cart-overlay {
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    background: rgba(17, 17, 17, 0.6);
+    z-index: 1;
+}
+
+#menu-overlay {
+    position: absolute;
+    width: 100%;
+    height: 1570px;
+    background: rgba(17, 17, 17, 0.6);
+    z-index: 1;
+}
+
+#menu-title {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    margin-top: 10px;
+    margin-left: 625px;
+    font-size: 25px;
+}
+
+.order-pizza {
+    position: absolute;
+    z-index: 1;
+    margin-left: 80px;
+}
+
+.pizza-size {
+    display: flex;
+}
+
+.small-pizza {
+    position: relative;
+    width: 300px;
+    height: 210px;
+    margin: 60px;
+    padding-top: 11px;
+    padding-left: 25px;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+}
+
+#smallpizza {
+    position: absolute;
+    width: 250px;
+    opacity: 0.9;
+    transition: all ease-in-out .4s;
+}
+
+#smallpizza:hover {
+    transform: scale(1.1);
+}
+
+.small-pizza input[type="radio"] {
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 4px;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+}
+
+#small-p-tag {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.13em;
+    margin-top: -45px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#small-price {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
+.medium-pizza {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 600px;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+}
+
+#medium-pizza {
+    position: absolute;
+    width: 250px;
+    height: 160px;
+    margin-top: 15px;
+    margin-left: 23px;
+    opacity: 0.9;
+    transition: all ease-in-out .4s;
+}
+
+#medium-pizza:hover {
+    transform: scale(1.1);
+}
+
+.medium-pizza input[type="radio"] {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 29px;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.medium-p-t {
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 700px;
+}
+
+#medium-p-tag {
+    position: absolute;
+    margin-left: -18px;
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#medium-price {
+    position: absolute;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    z-index: 1;
+    margin: 20px;
+    margin-top: 48px;
+}
+
+.large-pizza {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 1040px;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+}
+
+#large-pizza {
+    position: absolute;
+    width: 250px;
+    height: 160px;
+    margin-top: 15px;
+    margin-left: 23px;
+    opacity: 0.9;
+    transition: all ease-in-out .4s;
+}
+
+#large-pizza:hover {
+    transform: scale(1.1);
+}
+
+.large-pizza input[type="radio"] {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 29px;
+    transform: scale(1.8);
+    z-index: 3;
+    cursor: pointer;
+}
+
+.large-p-t {
+    position: absolute;
+    margin-top: 280px;
+    margin-right: 360px;
+    right: 0;
+}
+
+#large-p-tag {
+    position: absolute;
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+
+#large-price {
+    position: absolute;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    z-index: 1;
+    margin: 20px;
+    margin-top: 48px;
+}
+
+#menu-line1 {
+    position: absolute;
+    width: 97%;
+    height: 1px;
+    background-color: white;
+    z-index: 1;
+    margin-top: 382px;
+    margin-left: 23px;
+}
+
+.crusts {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    margin-top: 450px;
+}
+
+#crusts-head {
+    position: absolute;
+    width: 400px;
+    color: white;
+    font-size: 25px;
+    z-index: 1;
+    margin-top: -50px;
+    margin-left: 580px;
+    text-transform: capitalize;
+}
+
+.stuffed-crust {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+    margin-left: 140px;
+}
+
+#stuffed-crust {
+    position: absolute;
+}
+
+#stuffed-input {
+    position: absolute;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+#stuffed-img {
+    width: 235px;
+    height: 170px;
+    transition: all ease-in-out .4s;
+}
+
+#stuffed-img:hover {
+    transform: scale(1.1);
+}
+
+#stuffed-t-price {
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    z-index: 1;
+
+}
+
+#stuffed-tag {
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#stuffed-price {
+    color: white;
+    font-size: 17px;
+    z-index: 1;
+}
+
+.glutten-crust {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+    margin-left: 165px;
+}
+
+#glutten-crust {
+    position: absolute;
+}
+
+#glutten-input {
+    position: absolute;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#glutten-img {
+    width: 235px;
+    height: 170px;
+    transition: all ease-in-out .4s;
+}
+
+#glutten-img:hover {
+    transform: scale(1.1);
+}
+
+#glutten-t-price {
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    z-index: 1;
+
+}
+
+#glutten-tag {
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#glutten-price {
+    color: white;
+    font-size: 17px;
+    z-index: 1;
+}
+
+.crispy-crust {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+    margin-left: 165px;
+}
+
+#crispy-crust {
+    position: absolute;
+}
+
+#crispy-input {
+    position: absolute;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#crispy-img {
+    width: 235px;
+    height: 170px;
+    transition: all ease-in-out .4s;
+}
+
+#crispy-img:hover {
+    transform: scale(1.1);
+}
+
+#crispy-t-price {
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    z-index: 1;
+
+}
+
+#crispy-tag {
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#crispy-price {
+    color: white;
+    font-size: 17px;
+    z-index: 1;
+}
+
+#menu-line2 {
+    position: absolute;
+    width: 97%;
+    height: 1px;
+    background-color: white;
+    z-index: 1;
+    margin-top: 790px;
+    margin-left: 23px;
+}
+
+.toppings {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    margin-top: 870px;
+}
+
+#toppings-head {
+    position: absolute;
+    width: 400px;
+    color: white;
+    font-size: 25px;
+    z-index: 1;
+    margin-top: -55px;
+    margin-left: 620px;
+    text-transform: capitalize;
+}
+
+.pepperoni {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+    margin-left: 140px;
+}
+
+#pepperoni {
+    position: absolute;
+}
+
+#pepperoni-input {
+    position: absolute;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#pepperoni-img {
+    width: 235px;
+    height: 170px;
+    transition: all ease-in-out .4s;
+}
+
+#pepperoni-img:hover {
+    transform: scale(1.1);
+}
+
+#pepperoni-t-price {
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    z-index: 1;
+
+}
+
+#pepperoni-tag {
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#pepperoni-price {
+    color: white;
+    font-size: 17px;
+    z-index: 1;
+}
+
+.mushroom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+    margin-left: 165px;
+}
+
+#mushroom {
+    position: absolute;
+}
+
+#mushroom-input {
+    position: absolute;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#mushroom-img {
+    width: 235px;
+    height: 170px;
+    transition: all ease-in-out .4s;
+}
+
+#mushroom-img:hover {
+    transform: scale(1.1);
+}
+
+#mushroom-t-price {
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    z-index: 1;
+
+}
+
+#mushroom-tag {
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#mushroom-price {
+    color: white;
+    font-size: 17px;
+    z-index: 1;
+}
+
+.bacon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+    margin-left: 165px;
+}
+
+#bacon {
+    position: absolute;
+}
+
+#bacon-input {
+    position: absolute;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#bacon-img {
+    width: 235px;
+    height: 170px;
+    transition: all ease-in-out .4s;
+}
+
+#bacon-img:hover {
+    transform: scale(1.1);
+}
+
+#bacon-t-price {
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    z-index: 1;
+
+}
+
+#bacon-tag {
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#bacon-price {
+    color: white;
+    font-size: 17px;
+    z-index: 1;
+}
+
+#select-error {
+    display: none;
+    position: absolute;
+    width: 340px;
+    color: #e12301;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 400px;
+}
+
+#menu-line3 {
+    position: absolute;
+    width: 97%;
+    height: 1px;
+    background-color: white;
+    z-index: 1;
+    margin-top: 1210px;
+    margin-left: 23px;
+}
+
+.checkout {
+    position: absolute;
+    display: flex;
+    margin-top: 1250px;
+    margin-left: 200px;
+    z-index: 1;
+}
+
+#checkout-btn {
+    position: absolute;
+    width: 180px;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    font-size: 19px;
+    transition: all ease-in-out .4s;
+    outline: none
+}
+
+#checkout-btn:hover {
+    background-color: #e12301;
+    border: 1px solid transparent
+}
+
+.cart {
+    display: none;
+    position: absolute;
+    margin-left: 350px;
+    width: 450px;
+    height: 600px;
+    border: 1px solid white;
+    background: white;
+}
+
+#cart-head {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#your-order {
+    color: black;
+    margin: 20px;
+}
+
+#order-size {
+    font-size: 20px;
+    padding: 20px;
+}
+
+#order-crust {
+    font-size: 20px;
+    padding: 20px;
+}
+
+#order-toppings {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.delivery {
+    margin: 20px 0px 0px 40px;
+    font-size: 20px;
+}
+
+.deliver-inputs {
+    margin-left: 40px;
+}
+
+.deliver-inputs input[type="radio"] {
+    cursor: pointer;
+}
+
+.deliver-inputs label {
+    font-size: 17px;
+}
+
+.total-cost {
+    margin: 5px 0px 0px 40px;
+    font-size: 20px;
+}
+
+#submit-order {
+    width: 110px;
+    height: 40px;
+    font-size: 17px;
+    background: black;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    color: white;
+    border: 1px solid transparent;
+    transition: all ease-in-out .4s;
+}
+
+#submit-order:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
 }

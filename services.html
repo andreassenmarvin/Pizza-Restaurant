@@ -17,6 +17,7 @@
 
 <body>
     <div class="body-overlay"></div>
+    <div class="services-overlay"></div>
     <div class="nav-menu">
         <div class="nav-brand">
             <img src="https://img.icons8.com/ios/452/d.png" alt="logo" class="navbar-brand brand-auto" id="navbar-D">
@@ -36,20 +37,10 @@
             </a>
     </div>
 
-    <video autoplay muted loop id="services-video"
-        poster="https://media-cdn.tripadvisor.com/media/photo-s/15/c4/f0/44/la-joce-la-pizz-de-la.jpg">
-        <source
-            src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/DHmMj5B/view-of-slices-of-pizza-in-the-restaurant-steadycam-shot_bvk1crcfg__8b6038c49158048d25e3329d2b890954__P360.mp4"
-            type="video/mp4">
-        <source
-            src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/DHmMj5B/view-of-slices-of-pizza-in-the-restaurant-steadycam-shot_bvk1crcfg__8b6038c49158048d25e3329d2b890954__P360.mp4.ogv"
-            type="video/ogv">
-        <source
-            src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/DHmMj5B/view-of-slices-of-pizza-in-the-restaurant-steadycam-shot_bvk1crcfg__8b6038c49158048d25e3329d2b890954__P360.mp4.webm"
-            type="video/webm">
-    </video>
 
-    <nav class="navbar about-nav" id="navbar">
+    <img src="Assets/services-img.jpg" alt="Restaurant image" class="img-fluid" id="services-img">
+
+    <nav class="navbar services-nav" id="navbar">
         <i class="bi bi-list  menu-bar" id="menu-bar"></i>
         <h1 id="nav-title">Draconian pizza store</h1>
         <div class="nav-brand">
@@ -66,6 +57,158 @@
     </nav>
 
 
+    <div class="card services-card">
+        <div class="card-body">
+            <div class="card-text">
+                <p id="card-text">Checkout our awesome offers below.Order your pizza now and we'll deliver at your
+                    doorstep.
+                    <br />
+                    Enjoy our stellar services.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="menu" id="menu">
+        <h2 id="services-title">What We Offer.</h2>
+        <div id="menu-overlay" class="menu-overlay"></div>
+        <h3 id="menu-title">Choose your preferred size</h3>
+        <div id="pizzaSizes">
+            <div class="order-pizza">
+                <div class="pizza-size">
+                    <div class="small-pizza">
+                        <input type="radio" name="pizzasize" value="Small sized pizza(650/=)" id="small-check">
+                        <label for="small-pizza" id="small-label"><img src="Assets/small-pizza.jpg" alt="small pizza"
+                                id="smallpizza"></label>
+                    </div>
+                </div>
+                <h3 id="small-p-tag">Small Pizza</h3>
+                <p id="small-price">ksh650</p>
+            </div>
+            <div class="medium-pizza">
+                <input type="radio" name="pizzasize" value="Medium sized pizza(850/=)" id="medium-check">
+                <label for="medium-pizza" id="medium-label"><img src="Assets/medium-pizza.jpg" alt="medium pizza"
+                        id="medium-pizza"></label>
+            </div>
+            <div class="medium-p-t">
+                <h3 id="medium-p-tag">medium Pizza</h3>
+                <p id="medium-price">ksh850</p>
+            </div>
+            <div class="large-pizza">
+                <input type="radio" name="pizzasize" value="Large sized pizza(1250/=)" id="large-check">
+                <label for="large-pizza" id="large-label"><img src="Assets/large-pizza.jpg" alt="large pizza"
+                        id="large-pizza"></label>
+            </div>
+        </div>
+        </div>
+        <div class="large-p-t">
+            <h3 id="large-p-tag">large Pizza</h3>
+            <p id="large-price">ksh1250</p>
+        </div>
+        </div>
+        <div id="menu-line1"></div>
+        <div class="crusts">
+            <h3 id="crusts-head">Select your preferred type of crust</h3>
+            <div class="stuffed-crust">
+                <div id="stuffed-crust">
+                    <input type="radio" name="crusts" value="Stuffed Crust(150/=)" id="stuffed-input">
+                    <img src="Assets/stuffed-crust.jpg" alt="stuffed crust" id="stuffed-img">
+                    <div id="stuffed-t-price">
+                        <h3 id="stuffed-tag">Stuffed crust</h3>
+                        <p id="stuffed-price">Ksh 150</p>
+                    </div>
+                </div>
+            </div>
+            <div class="glutten-crust">
+                <div id="glutten-crust">
+                    <input type="radio" name="crusts" value="Glutten Crust(200/=)" id="glutten-input">
+                    <img src="Assets/glutenfreepizzacrust.jpg" alt="Glutten-free crust" id="glutten-img">
+                    <div id="glutten-t-price">
+                        <h3 id="glutten-tag">Glutten-free crust</h3>
+                        <p id="glutten-price">Ksh 200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="crispy-crust">
+                <div id="crispy-crust">
+                    <input type="radio" name="crusts" value="Crispy Crust(250/=)" id="crispy-input">
+                    <img src="Assets/crispy-crust.webp" alt="Crispy crust" id="crispy-img">
+                    <div id="crispy-t-price">
+                        <h3 id="crispy-tag">Crispy crust</h3>
+                        <p id="crispy-price">Ksh 250</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-line2"></div>
+        <div class="toppings">
+            <h3 id="toppings-head">Select your preferred topping</h3>
+            <div class="pepperoni">
+                <div id="pepperoni">
+                    <input type="checkbox" name="toppings" value="Pepperoni topping(50/=)" id="pepperoni-input">
+                    <img src="Assets/pepperoni.jpeg" alt="pepperoni topping" id="pepperoni-img">
+                    <div id="pepperoni-t-price">
+                        <h3 id="pepperoni-tag">Pepperoni topping</h3>
+                        <p id="pepperoni-price">Ksh 50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mushroom">
+                <div id="mushroom">
+                    <input type="checkbox" name="toppings" value="Mushroom topping(50/=)" id="mushroom-input">
+                    <img src="Assets/mushroom.jpg" alt="Mushroom topping" id="mushroom-img">
+                    <div id="mushroom-t-price">
+                        <h3 id="mushroom-tag">mushroom topping</h3>
+                        <p id="mushroom-price">Ksh 50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bacon">
+                <div id="bacon">
+                    <input type="checkbox" name="toppings" value="Bacon topping(50/=)" id="bacon-input">
+                    <img src="Assets/bacon.jpg" alt="Bacon topping" id="bacon-img">
+                    <div id="bacon-t-price">
+                        <h3 id="bacon-tag">bacon topping</h3>
+                        <p id="bacon-price">Ksh 50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-line3"></div>
+        <div class="checkout">
+            <a href="#cart-checkout"><button type="button" class="btn-default" id="checkout-btn">Proceed to
+                    checkout</button></a>
+            <p id="select-error">Kindly select your desired pizza and crust</p>
+            <form class="checkout-form">
+                <div class="cart" id="cart-checkout">
+                    <h3 id="cart-head">Checkout here</h3>
+                    <div id="your-order">
+                        <h4 id="order-size">You have ordered a:</h4>
+                        <h4 id="order-crust">With:</h4>
+                        <h4 id="order-toppings">and:</h4>
+                    </div>
+                    <div class="delivery">
+                        <p>Would you like us to deliver your order at an additional fee of Ksh250?</p>
+                    </div>
+                    <div class="deliver-inputs">
+                        <div id="yes-radio">
+                            <input type="radio" name="deliver" value="yes" id="yes">
+                            <label for="Yes">Yes</label>
+                        </div>
+                        <div id="no-radio">
+                            <input type="radio" name="deliver" value="no" id="no">
+                            <label for="No">No</label>
+                        </div>
+                    </div>
+                    <div class="total-cost">
+                        <p id="total-cost">Your total cost is:</p>
+                    </div>
+                    <input type="submit" value="Proceed" id="submit-order">
+                </div>
+            </form>
+        </div>
+        <img src="Assets/menu-bg.jpg" alt="restaurant" class="img-fluid menu-bg" id="menu-bg">
+    </section>
 
     <footer class="footer" id="footer">
         <div class="footer-info">
