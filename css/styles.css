@@ -255,7 +255,7 @@ i {
 }
 
 .about-nav {
-    background-color: white;
+    background-color: transparent;
 }
 
 .about-section {
@@ -404,3 +404,113 @@ i {
     width: 25px;
     height: 30px;
 }
+
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 230px;
+    background: rgb(15, 15, 15);
+    color: white;
+}
+
+#about-footer {
+    border-top: 1px solid black;
+}
+
+.footer-info {
+    position: absolute;
+    display: flex;
+    margin: 40px;
+}
+
+#business-hrs {
+    font-size: 27px;
+}
+
+.footer-hrs {
+    display: flex;
+    border-right: 1px solid white;
+    padding-right: 20px;
+}
+
+.footer-list {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.footer-list li {
+    font-size: 20px;
+}
+
+#footer-call {
+    margin-left: 80px;
+    padding-right: 80px;
+    border-right: 1px solid white;
+}
+
+#footer-call h4 {
+    font-size: 27px;
+    text-align: center;
+}
+
+#footer-call a {
+    font-size: 20px;
+    color: blue;
+}
+
+#footer-contact {
+    margin-left: 70px;
+    padding-right: 80px;
+    border-right: 1px solid white;
+}
+
+#footer-contact h4 {
+    font-size: 27px;
+    text-align: center;
+}
+
+#footer-contact a {
+    font-size: 20px;
+    color: blue;
+}
+
+i {
+    cursor: pointer;
+}
+
+#footer-follow {
+    margin-left: 50px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-left: -25px;
+    font-size: 13px;
+    display: flex;
+}
+
+#footer-follow h4 {
+    font-size: 27px;
+}
+
+#footer-follow a {
+    font-size: 18px;
+    color: black;
+}
+
+#footer-copy {
+    position: relative;
+    display: block;
+    margin: auto;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    top: 80px;
+    border-top: 1px solid white;
+    width: 100%;
+}
+
