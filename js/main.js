@@ -36,6 +36,15 @@ $(function () {
         $(".body-overlay").fadeOut();
     })
 
+    $(".body-overlay").click(function () {
+        $(".nav-menu").slideUp();
+        $(".menu-bar").fadeIn();
+        $(".menu-hide").fadeOut();
+        $(".navbar-brand").removeClass("brand-menu");
+        $(".navbar-brand").addClass("brand-auto");
+        $(".body-overlay").fadeOut();
+    })
+
     $("#nav-menu-links li").click(function () {
         $(".nav-menu").fadeOut();
         $(".menu-bar").fadeIn();
