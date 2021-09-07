@@ -1,0 +1,120 @@
+.nav-menu {
+    display: none;
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    z-index: 4;
+}
+
+#nav-menu-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 10px;
+}
+
+#nav-menu-links li {
+    margin: 70px;
+    margin-top: 90px;
+    font-size: 18px;
+    color: black;
+}
+
+.nav-brand {
+    position: absolute;
+}
+
+.brand-auto {
+    margin-left: 700px;
+    width: 50px;
+}
+
+.brand-left {
+    margin-left: 130px;
+    width: 50px;
+}
+
+.brand-menu {
+    margin-left: 10px;
+    width: 50px;
+}
+
+#navbar-D {
+    width: 50px;
+}
+
+#navbar-R {
+    position: absolute;
+    width: 50px;
+    margin-left: -30px;
+}
+
+.contact {
+    position: absolute;
+    right: 30px;
+    margin-top: 5px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+}
+
+#c-number {
+    padding: 40px;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    margin-top: 15px;
+}
+
+i {
+    margin: 30px;
+    font-size: 12px;
+}
+
+#facebook {
+    color: blue;
+    cursor: pointer;
+}
+
+#instagram {
+    color: #833AB4;
+    cursor: pointer;
+}
+
+#whatsapp {
+    color: green;
+    cursor: pointer;
+}
+
+#navbar {
+    position: sticky;
+    width: 100%;
+    height: 80px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    transition: all ease-in-out 0.6s;
+}
+
+.navbar-animate {
+    animation: animate 1s;
+}
+
+@keyframes animate {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 80px;
+    }
+}
+
+#nav-title {
+    color: black;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    display: none;
+}
