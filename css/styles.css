@@ -43,7 +43,7 @@ body {
 .menu-hide {
     position: absolute;
     display: none;
-    margin-left: 220px;
+    margin-left: 180px;
     font-size: 20px;
     cursor: pointer;
 }
@@ -256,6 +256,7 @@ i {
 
 .about-nav {
     background-color: transparent;
+    max-width: 100%;
 }
 
 .about-section {
@@ -424,6 +425,7 @@ i {
 }
 
 .services-nav {
+    width: 100%;
     background-color: white;
     z-index: 3;
 }
@@ -438,7 +440,7 @@ i {
     margin: auto;
     margin-top: 130px;
     border-radius: 5px;
-    z-index: 3;
+    z-index: 2;
 }
 
 #card-text {
@@ -1382,4 +1384,1425 @@ i {
     top: 80px;
     border-top: 1px solid white;
     width: 100%;
+}
+
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .menu-bar {
+        font-size: 30px;
+    }
+
+    .menu-hide {
+        margin-left: 120px;
+        font-size: 18px;
+    }
+
+    .nav-menu {
+        height: 71%;
+    }
+
+
+    .nav-menu-links li {
+        margin: 30px;
+        margin-top: 110px;
+        font-size: 19px;
+    }
+
+
+    .brand-auto {
+        margin-left: 400px;
+        width: 40px;
+    }
+
+    .brand-left {
+        margin-left: 130px;
+        width: 40px;
+    }
+
+    .brand-menu {
+        margin-left: 10px;
+        width: 40px;
+    }
+
+    #navbar-D {
+        width: 30px;
+    }
+
+    #navbar-R {
+        width: 30px;
+        margin-left: -23px;
+    }
+
+    .contact {
+        margin-top: 3px;
+    }
+
+    #c-number {
+        padding: 40px;
+        font-size: 17px;
+        letter-spacing: 0.1em;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    i {
+        margin: 10px;
+        font-size: 10px;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+
+    .navbar-animate {
+        animation: animate 1s;
+    }
+
+    @keyframes animate {
+        from {
+            height: 0px;
+        }
+
+        to {
+            height: 60px;
+        }
+    }
+
+    #nav-title {
+        font-size: 30px;
+    }
+
+
+    .head {
+        padding: 30px;
+    }
+
+    #head-title {
+        font-size: 45px;
+        letter-spacing: 0.05em;
+        margin-top: 20px;
+    }
+
+    #head-t {
+        margin-top: 15px;
+        font-size: 30px;
+        letter-spacing: 0.08em;
+    }
+
+    #head-p {
+        margin-top: 20px;
+        font-size: 17px;
+        letter-spacing: 0.1em;
+        width: 400px;
+    }
+
+    #order-now {
+        margin-top: 10px;
+        font-size: 20px;
+        width: 400px;
+    }
+
+
+    #order-btn {
+        width: 150px;
+        height: 50px;
+        font-size: 17px;
+        letter-spacing: 0.18em;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    #about-img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .about-nav {
+        width: 100%;
+    }
+
+
+    #aboutus {
+        margin-top: 6px;
+        width: 75%;
+    }
+
+    #about-h {
+        font-size: 28px;
+    }
+
+    #about-p {
+        font-size: 19px;
+        letter-spacing: 0.05em;
+    }
+
+    .carousel {
+        margin-top: 40px;
+    }
+
+    #carousel-tag {
+        width: 40%;
+        font-size: 25px;
+        letter-spacing: 0.05em;
+    }
+
+    #carousel-1 {
+        width: 70%;
+        height: 400px;
+    }
+
+    #carousel-2 {
+        width: 70%;
+        height: 400px;
+    }
+
+    #carousel-3 {
+        width: 70%;
+        height: 400px;
+    }
+
+
+    .carousel-overlay {
+        width: 67%;
+        height: 400px;
+    }
+
+    .carousel-indicators li {
+        margin: 10px;
+        width: 25px;
+    }
+
+    .carousel-control-prev {
+        width: 25px;
+        height: 30px;
+        margin-left: 100px;
+    }
+
+    .carousel-control-prev-icon {
+        width: 20px;
+        height: 25px;
+    }
+
+    .carousel-control-next {
+        width: 25px;
+        height: 30px;
+        margin-right: 100px;
+    }
+
+    .carousel-control-next-icon {
+        width: 20px;
+        height: 25px;
+    }
+
+
+    .footer {
+        height: 150px;
+
+    }
+
+    .footer-info {
+        margin: 20px;
+    }
+
+    #business-hrs {
+        font-size: 18px;
+    }
+
+    .footer-hrs {
+        padding-right: 10px;
+    }
+
+    .footer-list {
+        margin-left: 10px;
+    }
+
+    .footer-list li {
+        font-size: 12px;
+    }
+
+    #footer-call {
+        margin-left: 70px;
+        padding-right: 50px;
+    }
+
+    #footer-call h4 {
+        font-size: 18px;
+    }
+
+    #footer-call a {
+        font-size: 10px;
+    }
+
+    #footer-contact {
+        margin-left: 50px;
+        padding-right: 40px;
+    }
+
+    #footer-contact h4 {
+        font-size: 18px;
+    }
+
+    #footer-contact a {
+        font-size: 10px;
+    }
+
+    #footer-follow {
+        margin-left: 50px;
+        padding-right: 20px;
+    }
+
+    .footer-icons {
+        margin-left: -1px;
+        font-size: 7px;
+    }
+
+    #footer-follow h4 {
+        font-size: 17px;
+    }
+
+    #footer-follow a {
+        font-size: 8px;
+    }
+
+    #footer-copy {
+        padding-top: 15px;
+        font-size: 15px;
+        top: 80px;
+        width: 100%;
+    }
+
+    #services-title {
+        padding-bottom: 15px;
+        width: 70%;
+        font-size: 25px;
+    }
+
+    .menu {
+        margin-top: 200px;
+    }
+
+    #menu-bg {
+        height: 1400px;
+    }
+
+    .menu-cart-bg {
+        height: 1600px;
+    }
+
+    .menu-cart-overlay {
+        height: 1600px;
+        ;
+    }
+
+    #menu-overlay {
+        height: 1400px;
+    }
+
+    #menu-title {
+        margin-top: 10px;
+        margin-left: 360px;
+        font-size: 20px;
+    }
+
+    .order-pizza {
+        margin-left: 60px;
+    }
+
+    .small-pizza {
+        width: 200px;
+        height: 150px;
+        margin: 70px 0 0 0;
+        padding-top: 11px;
+        padding-left: 25px;
+    }
+
+    #smallpizza {
+        width: 150px;
+    }
+
+    .small-pizza input[type="radio"] {
+        margin-top: 14px;
+        margin-left: 4px;
+        transform: scale(1.3);
+    }
+
+    #small-p-tag {
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        margin-top: 10px;
+    }
+
+    #small-price {
+        font-size: 13px;
+    }
+
+    .medium-pizza {
+        margin-top: 72px;
+        margin-left: 350px;
+        width: 200px;
+        height: 150px;
+    }
+
+    #medium-pizza {
+        width: 150px;
+        height: 100px;
+        margin-top: 15px;
+        margin-left: 23px;
+    }
+
+
+    .medium-pizza input[type="radio"] {
+        margin-top: 28px;
+        margin-left: 28px;
+        transform: scale(1.3);
+    }
+
+    .medium-p-t {
+        margin-top: 220px;
+        margin-left: 420px;
+    }
+
+    #medium-p-tag {
+        margin-left: -18px;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        margin-top: 10px;
+    }
+
+    #medium-price {
+        font-size: 13px;
+        margin: 10px;
+        margin-top: 38px;
+    }
+
+    .large-pizza {
+        margin-top: 72px;
+        margin-left: 630px;
+        width: 200px;
+        height: 150px;
+    }
+
+    #large-pizza {
+        width: 150px;
+        height: 100px;
+        margin-top: 15px;
+        margin-left: 23px;
+    }
+
+    #large-pizza:hover {
+        transform: scale(1.1);
+    }
+
+    .large-pizza input[type="radio"] {
+        margin-top: 28px;
+        margin-left: 27px;
+        transform: scale(1.3);
+    }
+
+    .large-p-t {
+        margin-top: 230px;
+        margin-right: 250px;
+    }
+
+    #large-p-tag {
+        margin-top: 1px;
+        margin-left: 10px;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+    }
+
+
+    #large-price {
+        font-size: 13px;
+        margin: 28px 0 0 25px;
+    }
+
+    #menu-line1 {
+        width: 97%;
+        margin-top: 350px;
+        margin-left: 23px;
+    }
+
+    .crusts {
+        margin-top: 450px;
+    }
+
+    #crusts-head {
+        margin-top: -70px;
+        margin-left: 340px;
+        font-size: 20px
+    }
+
+    .stuffed-crust {
+        width: 200px;
+        height: 150px;
+        margin-left: 50px;
+    }
+
+
+    #stuffed-input {
+        transform: scale(1.3);
+        margin-top: 7px;
+        margin-left: 7px;
+    }
+
+    #stuffed-img {
+        width: 150px;
+        height: 100px;
+    }
+
+
+    #stuffed-t-price {
+        margin-left: -30px;
+
+    }
+
+    #stuffed-tag {
+        width: 200px;
+        font-size: 15px;
+        margin-top: 35px;
+    }
+
+    #stuffed-price {
+        font-size: 13px;
+    }
+
+    .glutten-crust {
+        width: 200px;
+        height: 150px;
+        margin-left: 100px;
+    }
+
+    #glutten-input {
+        transform: scale(1.3);
+        margin-top: 7px;
+        margin-left: 7px;
+    }
+
+    #glutten-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    #glutten-img:hover {
+        transform: scale(1.1);
+    }
+
+    #glutten-t-price {
+        margin-left: -25px;
+
+    }
+
+    #glutten-tag {
+        width: 200px;
+        font-size: 15px;
+        margin-top: 35px;
+    }
+
+    #glutten-price {
+        font-size: 13px;
+    }
+
+    .crispy-crust {
+        width: 200px;
+        height: 150px;
+        margin-left: 90px;
+    }
+
+
+    #crispy-input {
+        transform: scale(1.3);
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    #crispy-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    #crispy-img:hover {
+        transform: scale(1.1);
+    }
+
+    #crispy-t-price {
+        position: absolute;
+        color: white;
+        text-align: center;
+        margin-left: -20px;
+        z-index: 1;
+
+    }
+
+    #crispy-tag {
+        width: 200px;
+        font-size: 15px;
+        margin-top: 35px;
+    }
+
+    #crispy-price {
+        font-size: 13px;
+    }
+
+    #menu-line2 {
+        width: 97%;
+        height: 1px;
+        margin-top: 750px;
+        margin-left: 23px;
+    }
+
+    .toppings {
+        position: absolute;
+        display: flex;
+        z-index: 1;
+        margin-top: 870px;
+    }
+
+    #toppings-head {
+        width: 300px;
+        font-size: 20px;
+        margin-top: -55px;
+        margin-left: 320px;
+    }
+
+    .pepperoni {
+        width: 200px;
+        height: 150px;
+        margin-left: 50px;
+    }
+
+
+    #pepperoni-input {
+        transform: scale(1.3);
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    #pepperoni-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    #pepperoni-img:hover {
+        transform: scale(1.1);
+    }
+
+    #pepperoni-t-price {
+        margin-left: -80px;
+
+    }
+
+    #pepperoni-tag {
+        font-size: 15px;
+        margin-top: 32px;
+    }
+
+    #pepperoni-price {
+        font-size: 13px;
+    }
+
+    .mushroom {
+        width: 200px;
+        height: 150px;
+        margin-left: 100px;
+    }
+
+    #mushroom-input {
+        transform: scale(1.3);
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    #mushroom-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    #mushroom-t-price {
+        margin-left: -70px;
+    }
+
+    #mushroom-tag {
+        font-size: 13px;
+        margin-top: 32px;
+    }
+
+    #mushroom-price {
+        color: white;
+        font-size: 17px;
+        z-index: 1;
+    }
+
+    .bacon {
+        width: 200px;
+        height: 150px;
+        margin-left: 100px;
+    }
+
+    #bacon-input {
+        transform: scale(1.3);
+    }
+
+    #bacon-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    #bacon-img:hover {
+        transform: scale(1.1);
+    }
+
+    #bacon-t-price {
+        margin-left: -70px;
+
+    }
+
+    #bacon-tag {
+        font-size: 15px;
+        margin-top: 32px;
+    }
+
+    #bacon-price {
+        font-size: 13px;
+    }
+
+    #select-error {
+        display: none;
+        position: absolute;
+        width: 340px;
+        color: #e12301;
+        font-size: 17px;
+        margin-top: 10px;
+        margin-left: 400px;
+    }
+
+    #menu-line3 {
+        margin-top: 1150px;
+    }
+
+    .checkout {
+        margin-top: 1050px;
+        margin-left: -100px;
+        z-index: 1;
+    }
+
+    #checkout-btn {
+        width: 100px;
+        height: 45px;
+        font-size: 10px;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .menu-bar {
+        font-size: 30px;
+    }
+
+    .menu-hide {
+        margin-left: 120px;
+        font-size: 18px;
+    }
+
+    .nav-menu {
+        height: 71%;
+    }
+
+
+    .nav-menu-links li {
+        margin: 30px;
+        margin-top: 110px;
+        font-size: 19px;
+    }
+
+
+    .brand-auto {
+        margin-left: 400px;
+        width: 40px;
+    }
+
+    .brand-left {
+        margin-left: 130px;
+        width: 40px;
+    }
+
+    .brand-menu {
+        margin-left: 10px;
+        width: 40px;
+    }
+
+    #navbar-D {
+        width: 30px;
+    }
+
+    #navbar-R {
+        width: 30px;
+        margin-left: -23px;
+    }
+
+    .contact {
+        margin-top: 3px;
+    }
+
+    #c-number {
+        padding: 40px;
+        font-size: 17px;
+        letter-spacing: 0.1em;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    i {
+        margin: 10px;
+        font-size: 10px;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+
+    .navbar-animate {
+        animation: animate 1s;
+    }
+
+    @keyframes animate {
+        from {
+            height: 0px;
+        }
+
+        to {
+            height: 60px;
+        }
+    }
+
+    #nav-title {
+        font-size: 30px;
+    }
+
+
+    .head {
+        padding: 30px;
+    }
+
+    #head-title {
+        font-size: 45px;
+        letter-spacing: 0.05em;
+        margin-top: 20px;
+    }
+
+    #head-t {
+        margin-top: 15px;
+        font-size: 30px;
+        letter-spacing: 0.08em;
+    }
+
+    #head-p {
+        margin-top: 20px;
+        font-size: 17px;
+        letter-spacing: 0.1em;
+        width: 400px;
+    }
+
+    #order-now {
+        margin-top: 10px;
+        font-size: 20px;
+        width: 400px;
+    }
+
+
+    #order-btn {
+        width: 150px;
+        height: 50px;
+        font-size: 17px;
+        letter-spacing: 0.18em;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    #about-img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .about-nav {
+        width: 100%;
+    }
+
+
+    #aboutus {
+        margin-top: 6px;
+        width: 75%;
+    }
+
+    #about-h {
+        font-size: 28px;
+    }
+
+    #about-p {
+        font-size: 19px;
+        letter-spacing: 0.05em;
+    }
+
+    .carousel {
+        margin-top: 40px;
+    }
+
+    #carousel-tag {
+        width: 40%;
+        font-size: 25px;
+        letter-spacing: 0.05em;
+    }
+
+    #carousel-1 {
+        width: 70%;
+        height: 400px;
+    }
+
+    #carousel-2 {
+        width: 70%;
+        height: 400px;
+    }
+
+    #carousel-3 {
+        width: 70%;
+        height: 400px;
+    }
+
+
+    .carousel-overlay {
+        width: 67%;
+        height: 400px;
+    }
+
+    .carousel-indicators li {
+        margin: 10px;
+        width: 25px;
+    }
+
+    .carousel-control-prev {
+        width: 25px;
+        height: 30px;
+        margin-left: 100px;
+    }
+
+    .carousel-control-prev-icon {
+        width: 20px;
+        height: 25px;
+    }
+
+    .carousel-control-next {
+        width: 25px;
+        height: 30px;
+        margin-right: 100px;
+    }
+
+    .carousel-control-next-icon {
+        width: 20px;
+        height: 25px;
+    }
+
+    #services-title {
+        padding-bottom: 15px;
+        width: 70%;
+        font-size: 25px;
+    }
+
+    .menu {
+        margin-top: 200px;
+    }
+
+    #menu-bg {
+        height: 1400px;
+    }
+
+    .menu-cart-bg {
+        height: 1600px;
+    }
+
+    .menu-cart-overlay {
+        height: 1600px;
+        ;
+    }
+
+    #menu-overlay {
+        height: 1400px;
+    }
+
+    #menu-title {
+        margin-top: 10px;
+        margin-left: 360px;
+        font-size: 20px;
+    }
+
+    .order-pizza {
+        margin-left: 60px;
+    }
+
+    .small-pizza {
+        width: 200px;
+        height: 150px;
+        margin: 70px 0 0 0;
+        padding-top: 11px;
+        padding-left: 25px;
+    }
+
+    #smallpizza {
+        width: 150px;
+    }
+
+    .small-pizza input[type="radio"] {
+        margin-top: 14px;
+        margin-left: 4px;
+        transform: scale(1.3);
+    }
+
+    #small-p-tag {
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        margin-top: 10px;
+    }
+
+    #small-price {
+        font-size: 13px;
+    }
+
+    .medium-pizza {
+        margin-top: 72px;
+        margin-left: 350px;
+        width: 200px;
+        height: 150px;
+    }
+
+    #medium-pizza {
+        width: 150px;
+        height: 100px;
+        margin-top: 15px;
+        margin-left: 23px;
+    }
+
+
+    .medium-pizza input[type="radio"] {
+        margin-top: 28px;
+        margin-left: 28px;
+        transform: scale(1.3);
+    }
+
+    .medium-p-t {
+        margin-top: 220px;
+        margin-left: 420px;
+    }
+
+    #medium-p-tag {
+        margin-left: -18px;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        margin-top: 10px;
+    }
+
+    #medium-price {
+        font-size: 13px;
+        margin: 10px;
+        margin-top: 38px;
+    }
+
+    .large-pizza {
+        margin-top: 72px;
+        margin-left: 630px;
+        width: 200px;
+        height: 150px;
+    }
+
+    #large-pizza {
+        width: 150px;
+        height: 100px;
+        margin-top: 15px;
+        margin-left: 23px;
+    }
+
+    #large-pizza:hover {
+        transform: scale(1.1);
+    }
+
+    .large-pizza input[type="radio"] {
+        margin-top: 28px;
+        margin-left: 27px;
+        transform: scale(1.3);
+    }
+
+    .large-p-t {
+        margin-top: 230px;
+        margin-right: 250px;
+    }
+
+    #large-p-tag {
+        margin-top: 1px;
+        margin-left: 10px;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+    }
+
+
+    #large-price {
+        font-size: 13px;
+        margin: 28px 0 0 25px;
+    }
+
+    #menu-line1 {
+        width: 97%;
+        margin-top: 350px;
+        margin-left: 23px;
+    }
+
+    .crusts {
+        margin-top: 450px;
+    }
+
+    #crusts-head {
+        margin-top: -70px;
+        margin-left: 340px;
+        font-size: 20px
+    }
+
+    .stuffed-crust {
+        width: 200px;
+        height: 150px;
+        margin-left: 50px;
+    }
+
+
+    #stuffed-input {
+        transform: scale(1.3);
+        margin-top: 7px;
+        margin-left: 7px;
+    }
+
+    #stuffed-img {
+        width: 150px;
+        height: 100px;
+    }
+
+
+    #stuffed-t-price {
+        margin-left: -30px;
+
+    }
+
+    #stuffed-tag {
+        width: 200px;
+        font-size: 15px;
+        margin-top: 35px;
+    }
+
+    #stuffed-price {
+        font-size: 13px;
+    }
+
+    .glutten-crust {
+        width: 200px;
+        height: 150px;
+        margin-left: 100px;
+    }
+
+    #glutten-input {
+        transform: scale(1.3);
+        margin-top: 7px;
+        margin-left: 7px;
+    }
+
+    #glutten-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    #glutten-img:hover {
+        transform: scale(1.1);
+    }
+
+    #glutten-t-price {
+        margin-left: -25px;
+
+    }
+
+    #glutten-tag {
+        width: 200px;
+        font-size: 15px;
+        margin-top: 35px;
+    }
+
+    #glutten-price {
+        font-size: 13px;
+    }
+
+    .crispy-crust {
+        width: 200px;
+        height: 150px;
+        margin-left: 90px;
+    }
+
+
+    #crispy-input {
+        transform: scale(1.3);
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    #crispy-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    #crispy-img:hover {
+        transform: scale(1.1);
+    }
+
+    #crispy-t-price {
+        position: absolute;
+        color: white;
+        text-align: center;
+        margin-left: -20px;
+        z-index: 1;
+
+    }
+
+    #crispy-tag {
+        width: 200px;
+        font-size: 15px;
+        margin-top: 35px;
+    }
+
+    #crispy-price {
+        font-size: 13px;
+    }
+
+    #menu-line2 {
+        width: 97%;
+        height: 1px;
+        margin-top: 750px;
+        margin-left: 23px;
+    }
+
+    .toppings {
+        position: absolute;
+        display: flex;
+        z-index: 1;
+        margin-top: 870px;
+    }
+
+    #toppings-head {
+        width: 300px;
+        font-size: 20px;
+        margin-top: -55px;
+        margin-left: 320px;
+    }
+
+    .pepperoni {
+        width: 200px;
+        height: 150px;
+        margin-left: 50px;
+    }
+
+
+    #pepperoni-input {
+        transform: scale(1.3);
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    #pepperoni-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    #pepperoni-img:hover {
+        transform: scale(1.1);
+    }
+
+    #pepperoni-t-price {
+        margin-left: -80px;
+
+    }
+
+    #pepperoni-tag {
+        font-size: 15px;
+        margin-top: 32px;
+    }
+
+    #pepperoni-price {
+        font-size: 13px;
+    }
+
+    .mushroom {
+        width: 200px;
+        height: 150px;
+        margin-left: 100px;
+    }
+
+    #mushroom-input {
+        transform: scale(1.3);
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    #mushroom-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    #mushroom-t-price {
+        margin-left: -70px;
+    }
+
+    #mushroom-tag {
+        font-size: 13px;
+        margin-top: 32px;
+    }
+
+    #mushroom-price {
+        color: white;
+        font-size: 17px;
+        z-index: 1;
+    }
+
+    .bacon {
+        width: 200px;
+        height: 150px;
+        margin-left: 100px;
+    }
+
+    #bacon-input {
+        transform: scale(1.3);
+    }
+
+    #bacon-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    #bacon-img:hover {
+        transform: scale(1.1);
+    }
+
+    #bacon-t-price {
+        margin-left: -70px;
+
+    }
+
+    #bacon-tag {
+        font-size: 15px;
+        margin-top: 32px;
+    }
+
+    #bacon-price {
+        font-size: 13px;
+    }
+
+    #select-error {
+        display: none;
+        position: absolute;
+        width: 340px;
+        color: #e12301;
+        font-size: 17px;
+        margin-top: 10px;
+        margin-left: 400px;
+    }
+
+    #menu-line3 {
+        margin-top: 1150px;
+    }
+
+    .checkout {
+        margin-top: 1050px;
+        margin-left: -100px;
+        z-index: 1;
+    }
+
+    #checkout-btn {
+        width: 100px;
+        height: 45px;
+        font-size: 10px;
+    }
+
+
+
+    .footer {
+        height: 150px;
+
+    }
+
+    .footer-info {
+        margin: 20px;
+    }
+
+    #business-hrs {
+        font-size: 18px;
+    }
+
+    .footer-hrs {
+        padding-right: 10px;
+    }
+
+    .footer-list {
+        margin-left: 10px;
+    }
+
+    .footer-list li {
+        font-size: 12px;
+    }
+
+    #footer-call {
+        margin-left: 70px;
+        padding-right: 50px;
+    }
+
+    #footer-call h4 {
+        font-size: 18px;
+    }
+
+    #footer-call a {
+        font-size: 10px;
+    }
+
+    #footer-contact {
+        margin-left: 50px;
+        padding-right: 40px;
+    }
+
+    #footer-contact h4 {
+        font-size: 18px;
+    }
+
+    #footer-contact a {
+        font-size: 10px;
+    }
+
+    #footer-follow {
+        margin-left: 50px;
+        padding-right: 20px;
+    }
+
+    .footer-icons {
+        margin-left: -1px;
+        font-size: 7px;
+    }
+
+    #footer-follow h4 {
+        font-size: 17px;
+    }
+
+    #footer-follow a {
+        font-size: 8px;
+    }
+
+    #footer-copy {
+        padding-top: 15px;
+        font-size: 15px;
+        top: 80px;
+        width: 100%;
+    }
 }
