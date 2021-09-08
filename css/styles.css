@@ -1150,8 +1150,9 @@ i {
     border: 1px solid white;
     border-radius: 0;
     font-size: 19px;
-    transition: all ease-in-out .4s;
-    outline: none
+    transition: all ease-in-out .2s;
+    outline: none;
+    cursor: pointer;
 }
 
 #checkout-btn:hover {
